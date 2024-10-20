@@ -1,0 +1,13 @@
+.main-page{
+
+    height: 100vh;
+}
+
+.main-page>h1{
+    padding-top: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 7px;
+
+}

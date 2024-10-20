@@ -1,0 +1,78 @@
+.modal-window{
+    background-color: #7d7d7ddb;;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}
+
+.close{
+    display: none;
+}
+
+.modal-window-header{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-align:center;
+    font-size:20px;
+    font-family:Roboto;
+    gap: 10px;
+    border-style:hidden;
+    outline:none;
+    width:407px;
+}
+
+.name{
+    color:#ffffff;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:20px;
+    font-family:Roboto;
+    border-style:hidden;
+    outline:none;
+    width:367px;
+}
+
+.modal-window-body{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 300px;
+    background-color:rgba(50, 50, 50, 0.8700000166893005);
+    height:max-content;
+    width:307px;
+    border-radius:10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.modal-window-body>input{
+    height:35px;
+    font-size:15px;
+    text-align:center;
+    border: 0;
+    border-radius: 5px;
+    width: 207px;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid white;
+    color: white;
+
+}
+
+.modal-window-body>button {
+    background-color: #4e9471;
+    border:none;
+    color:white;
+    height: 36px;
+    font-size: 14px;
+    width: 131.025634765625px;
+    border-radius: 3.5897436141967773px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}

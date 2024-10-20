@@ -1,0 +1,68 @@
+.childCard {
+    margin-top: 10px;
+    height: 40px;
+    width: 315px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+    gap: 8px;
+    background-color: #ffffff;
+
+
+}
+.childName{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+
+}
+.avatar{
+    display: flex;
+    align-items: center;
+}
+.avatar > img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    padding-left: 10px;
+}
+.logo-outChild{
+    display: flex;
+    align-items: center;
+}
+.logo-outChild>img{
+    padding:2px;
+    justify-content: center;
+    width: 27px;
+}
+.logo-phoneCall{
+    display: flex;
+    align-items: center;
+}
+.logo-phoneCall>img{
+    padding:2px;
+    width: 27px;
+    margin-right: 10px;
+}
+.ListChildCard{
+
+}
+.ListChildCard>h1{
+    padding-top: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+.AbcientPage>h1{
+    padding-top: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
