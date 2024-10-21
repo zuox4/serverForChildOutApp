@@ -7,7 +7,10 @@ import Header from "../components/Header";
 import axios from "axios";
 import reloadImages from "../assets/reload3.svg";
 import {api_url} from "../api";
-const socket = io(api_url); // URL вашего сервера
+const socket = io(api_url,{
+    forceNew: true,
+    transports: ["polling"],
+    }); 
 const uppercase_russian_alphabet = [
     'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О',
     'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Э', 'Ю', 'Я'

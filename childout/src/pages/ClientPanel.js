@@ -10,7 +10,10 @@ import {useOutletContext} from "react-router-dom";
 import {api_url} from "../api";
 
 
-const socket = io(api_url); // URL вашего сервера
+const socket = io(api_url,{
+    forceNew: true,
+    transports: ["polling"],
+    }); 
 
 function ClientPanel() {
     const [message, setMessage] = useState('');
