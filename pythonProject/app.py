@@ -25,10 +25,10 @@ from flask import render_template, redirect, url_for, session
 app = Flask(__name__, static_folder='build/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///school.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_SECRET_KEY'] = 'your_secret_key'  # Задайте свой секретный ключ для JWT
+app.config['JWT_SECRET_KEY'] = 'your_secret_key' 
 app.config['SECRET_KEY'] = 'sdsdfsd'
-CORS(app, resources={r"/*": {"origins": "*"}})
-socketio = SocketIO(app, cors_allowed_origins="*")
+CORS(app, resources={r"/*": {"origins": "https://pass.1298.ru/"}})
+socketio = SocketIO(app, cors_allowed_origins="https://pass.1298.ru/")
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
