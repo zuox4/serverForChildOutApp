@@ -25,7 +25,7 @@ from flask import render_template, redirect, url_for, session
 app = Flask(__name__, static_folder='build/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///school.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_SECRET_KEY'] = 'your_secret_key' 
+app.config['JWT_SECRET_KEY'] = 'your_secret_key'
 app.config['SECRET_KEY'] = 'sdsdfsd'
 CORS(app, resources={r"/*": {"origins": "https://pass.1298.ru/"}})
 socketio = SocketIO(app, cors_allowed_origins="https://pass.1298.ru/")
@@ -120,7 +120,7 @@ class Mentor(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)
-    password_hash = db.Column(db.String(128))  # Поле для хранения хэшированного пароля
+    password_hash = db.Column(db.String(512))  # Поле для хранения хэшированного пароля
     phone_number = db.Column(db.String(15), nullable=True)
     class_id = db.Column(db.Integer, db.ForeignKey('class.id'), nullable=True)
 
