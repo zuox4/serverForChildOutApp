@@ -1,8 +1,0 @@
-select {
-    appearance: none; /* Убираем стандартный вид */
-    -webkit-appearance: none; /* Для Safari */
-    -moz-appearance: none; /* Для Firefox */
-    color: transparent; /* Скрываем текст */
-
-    background: white; /* Цвет фона */
-}
